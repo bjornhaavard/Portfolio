@@ -1,0 +1,6 @@
+:root {
+  --standard-padding: 2rem;
+  --header-color: #5eb89a;
+  --font-color: rgb(37, 37, 37);
+  --box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}

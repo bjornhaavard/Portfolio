@@ -1,27 +1,109 @@
+@import url(/css/components/variables.css);
 @import url(/css/components/nav.css);
+@import url(/css/components/about.css);
+@import url(/css/components/footer.css);
 
 *,
 *:before,
 *:after {
+  padding: 0;
+  margin: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-img {
-    width: 100%;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #EEEEEE;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 
+h1 {
+  color: var(--font-color);
+  font-style: oblique;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+a:active {
+  background-color: blueviolet;
+}
+
+img {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+.me-photo {
+  background-image: url(/images/me_cropped_frame.jpeg);
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex: 1;
+}
+
+.logo {
+  max-width: 120px;
+  display: flex;
+}
 
 .main {
-    background-image: url(/images/me.jpeg);
-    min-height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 40%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: burlywood;
+}
+
+.intro {
+  display: flex;
+  margin: 0 2rem 0 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+}
+
+.me-content {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+  font-size: 4rem;
+}
+
+.contact,
+.my-work {
+  height: 100vh;
+  height: 50vh;
+  scroll-margin-top: 8rem;
+}
+
+@media (max-width: 790px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .me-content {
+    font-size: 3rem;
+    flex: 0;
+    margin-top: 6rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
