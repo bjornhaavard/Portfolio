@@ -1,8 +1,37 @@
 .my-work {
+  /* display: flex; */
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem;
+  scroll-margin-top: 8rem;
+  height: 100vh;
+  /* justify-content: center; */
 }
 
-/* .work-container {
-    background-image: ;
-} */
+.work-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.work1,
+.work2,
+.work3 {
+  border: solid 3px black;
+  width: 400px;
+  border-radius: 4px;
+}
+
+.my-work h3 {
+  font-size: 1.5rem;
+  background-color: var(--header-color);
+  color: white;
+  font-weight: 600;
+}
+
+@media (max-width: 791px) {
+  .work-container {
+    flex-direction: column;
+  }
+}

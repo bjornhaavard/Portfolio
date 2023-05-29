@@ -3,6 +3,7 @@
 @import url(/css/components/about.css);
 @import url(/css/components/footer.css);
 @import url(/css/components/portfolio.css);
+@import url(/css/components/contact.css);
 
 *,
 *:before,
@@ -32,10 +33,6 @@ h1 {
 a {
   text-decoration: none;
   color: var(--font-color);
-}
-
-a:active {
-  background-color: blueviolet;
 }
 
 img {
@@ -85,12 +82,10 @@ body {
   font-size: 4rem;
 }
 
-.contact,
-.my-work {
+/* .contact {
   height: 100vh;
-  height: 50vh;
   scroll-margin-top: 8rem;
-}
+} */
 
 @media (max-width: 790px) {
   .intro {
