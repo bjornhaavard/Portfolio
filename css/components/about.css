@@ -2,3 +2,21 @@
   height: 50vh;
   scroll-margin-top: 8rem;
 }
+
+.about {
+  display: flex;
+  gap: 1rem;
+  background-color: var(--header-color);
+  height: 100vh;
+  color: var(--font-color);
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding: 2rem;
+}
+
+.about-text {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}

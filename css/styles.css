@@ -2,6 +2,7 @@
 @import url(/css/components/nav.css);
 @import url(/css/components/about.css);
 @import url(/css/components/footer.css);
+@import url(/css/components/portfolio.css);
 
 *,
 *:before,
@@ -11,6 +12,7 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {

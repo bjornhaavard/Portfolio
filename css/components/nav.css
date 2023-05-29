@@ -3,6 +3,7 @@
   justify-content: space-between;
   padding: 2rem;
   background-color: #5eb89a;
+  box-shadow: var(--box-shadow);
   .nav-item {
     &:hover {
       text-decoration: underline;
