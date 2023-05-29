@@ -16,13 +16,13 @@
   z-index: 100;
 }
 
-.nav-link[aria-current="page"] {
+.nav-link[aria-current="location"] {
   text-decoration: underline 0.25rem;
   text-underline-offset: 0.3rem;
 }
 
 nav a {
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--font-color);
   font-weight: 600;
 }
@@ -30,7 +30,6 @@ nav a {
 .nav-menu {
   background-color: var(--background-color);
   padding: 0.3rem;
-  transition: all 0.3s ease-out;
 }
 
 .bar {
@@ -59,7 +58,7 @@ nav a {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .nav-menu {
+  /* .nav-menu {
     position: absolute;
     right: -100%;
     display: none;
@@ -72,7 +71,8 @@ nav a {
     width: 100%;
     height: 70vh;
     text-align: center;
-    transition: all 0.8s;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
   }
 
   .nav-item {
@@ -82,7 +82,33 @@ nav a {
   .nav-menu.active {
     left: 0;
     display: block;
+    transform: translateX(0);
     transition: all 0.8s ease;
+  } */
+  .nav-menu {
+    position: fixed;
+    top: 94px;
+    right: 0;
+    bottom: 0;
+    width: 78%;
+    height: 55%;
+    background-color: var(--header-color);
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    margin: 2rem 0; /* Adjusted margin */
+  }
+
+  .nav-menu.active {
+    transform: translateX(0);
+    transition: transform 0.5s ease;
   }
 }
 

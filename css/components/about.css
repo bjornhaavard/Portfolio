@@ -1,6 +1,6 @@
 #about-me {
-  height: 50vh;
-  scroll-margin-top: 8rem;
+  height: 100vh;
+  scroll-margin-top: 5rem;
 }
 
 .about {
@@ -10,7 +10,7 @@
   height: 100vh;
   color: var(--font-color);
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 5rem;
   padding: 2rem;
 }
@@ -19,4 +19,10 @@
   max-width: 500px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 791px) {
+  .about {
+    flex-direction: column;
+  }
 }
