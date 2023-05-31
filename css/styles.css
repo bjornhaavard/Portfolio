@@ -73,6 +73,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  scroll-margin: 8rem;
 }
 
 .me-content {
@@ -84,7 +85,7 @@ body {
 
 /* .contact {
   height: 100vh;
-  scroll-margin-top: 8rem;
+ ;
 } */
 
 @media (max-width: 790px) {

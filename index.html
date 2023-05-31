@@ -52,35 +52,65 @@
         <div class="work-container">
           <div class="work1">
             <h3>Community science musem</h3>
-            <img src="/images/museum.png" alt="" />
+            <div class="work1-img"></div>
             <div class="work-text">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum minus officia sed ratione commodi exercitationem, nam similique dolorem tenetur eum labore facere qui, ipsa vero?
+              <div class="links">
+                <a href="https://github.com/bjornhaavard/Community_science-museum">Github</a>
+                <a href="https://snazzy-conkies-f91116.netlify.app/">Website</a>
+              </div>
             </div>
           </div>
           <div class="work2">
             <h3>Rainy days</h3>
-            <img src="/images/2023-05-29 18_05_39-RainyDays _ Home.png  " alt="" />
+            <div class="work2-img"></div>
             <div class="work-text">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur commodi natus fugiat! Quod harum beatae dolore cupiditate fugit tempora, sint nulla soluta, iure dolores eum
               corrupti animi ea consequatur perferendis.
+              <div class="links">
+                <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-bjornhaavard">Github</a>
+                <a href="https://kind-wilson-46a5f7.netlify.app/">Website</a>
+              </div>
             </div>
           </div>
           <div class="work3">
             <h3>Shooting blog</h3>
-            <img src="/images/2023-05-29 18_06_46-PewPewLife _ Home.png" alt="" />
+            <div class="work3-img"></div>
             <div class="work-text">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione animi ea alias nisi, nobis perspiciatis recusandae architecto? Dignissimos officia quam iusto ratione sapiente
               molestias, ex nesciunt cupiditate quod minus iste.
+              <div class="links">
+                <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-bjornhaavard/tree/main">Github</a>
+                <a href="https://magnificent-axolotl-a473b6.netlify.app/index.html">Website</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <div></div>
+        <<div class="contact-form">
+          <form id="contactForm" method="get">
+            <div class="messageSuccessfull" id="messageSent"></div>
+            <div>
+              <label for="name"></label>
+              <div class="form-error" id="fullNameError">Please enter your full name (minimum 4 characters)</div>
+            </div>
+            <div>
+              <input type="name" id="name" name="fullname" placeholder="full name" />
+              <label for="email">email</label>
+              <div class="form-error" id="emailError">Please enter a valid email address</div>
+            </div>
+            <div>
+              <input type="email" placeholder="email address" id="email" name="email" />
+            </div>
+            <div class="form-error" id="textError">Please enter a minimum of 5 letters</div>
+            <textarea aria-label="text area" name="text" id="text" cols="30" rows="10"></textarea>
+            <button class="cta">submit</button>
+          </form>
       </section>
     </main>
-    <footer class="footer">Bjørn Håvard Steinnes</footer>
+    <footer class="footer">Bjørn Håvard Steinnes &copy;</footer>
   </body>
   <script type="module" src="/js/index.js"></script>
 </html>
