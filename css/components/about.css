@@ -1,10 +1,13 @@
 #about-me {
   height: 100vh;
-  scroll-margin-top: rem;
+  width: 100%;
+  scroll-margin-top: 6rem;
 }
 
 .about {
   display: flex;
+  font-style: italic;
+  font-size: 2rem;
   gap: 1rem;
   background-color: var(--header-color);
   height: 100vh;
@@ -19,6 +22,7 @@
   max-width: 500px;
   display: flex;
   justify-content: center;
+  font-weight: 600;
 }
 
 @media (max-width: 791px) {

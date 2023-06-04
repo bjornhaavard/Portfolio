@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+.p-break {
+  margin-top: 2rem;
+}
+
 h1 {
   color: var(--font-color);
   font-style: oblique;
@@ -54,7 +58,7 @@ body {
   flex: 1;
 }
 
-.logo {
+#logo {
   max-width: 120px;
   display: flex;
 }
@@ -83,10 +87,10 @@ body {
   font-size: 4rem;
 }
 
-/* .contact {
-  height: 100vh;
- ;
-} */
+.show {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
 
 @media (max-width: 790px) {
   .intro {

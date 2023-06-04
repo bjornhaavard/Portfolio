@@ -1,19 +1,28 @@
 .my-work {
-  /* display: flex; */
+  display: flex;
   text-align: center;
   margin: 2rem;
   scroll-margin-top: 8rem;
   height: 100vh;
-  /* justify-content: center; */
+  justify-content: center;
+  flex-direction: column;
 }
 
 .my-work h2 {
   font-size: 3rem;
 }
 
+.my-work p {
+  max-width: 500px;
+}
+
 .work-text {
   background-color: var(--header-color);
-  padding: 2rem;
+  padding: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 1.3rem;
+  line-height: 1.7rem;
 }
 
 .links {
@@ -21,6 +30,37 @@
   justify-content: space-between;
   margin-top: 2rem;
   font-size: 1.2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  gap: 1rem;
+}
+
+#logo-html {
+  background-image: url(/images/icons8-html-logo-48.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+#logo-css {
+  background-image: url(/images/icons8-css-logo-48.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+}
+
+#logo-js {
+  background-image: url(/images/icons8-javascript-logo-50.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 50px;
 }
 
 .links a:hover {
@@ -37,12 +77,18 @@
   margin-top: 3rem;
 }
 
+.work1:hover {
+  will-change: transform;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
+
 .work1,
 .work2,
 .work3 {
   border: solid 3px black;
-  max-width: 600px;
+  max-width: 450px;
   border-radius: 4px;
+  background-color: var(--header-color);
 }
 
 .work3-img {
@@ -50,6 +96,7 @@
   background-position: center;
   background-size: cover;
   height: 400px;
+  width: auto;
 }
 
 .work2-img {
@@ -57,6 +104,7 @@
   background-position: center;
   background-size: cover;
   height: 400px;
+  width: auto;
 }
 
 .work1-img {
@@ -64,6 +112,7 @@
   background-position: center;
   background-size: cover;
   height: 400px;
+  width: auto;
 }
 
 .my-work h3 {
@@ -71,10 +120,46 @@
   background-color: var(--header-color);
   color: white;
   font-weight: 600;
+  padding: 2rem;
 }
 
-@media (max-width: 791px) {
+.about-text {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  background: burlywood;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: var(--box-shadow);
+  flex-flow: column;
+}
+
+.links a {
+  background-color: var(--font-color);
+  color: antiquewhite;
+  box-shadow: var(--box-shadow);
+  padding: 0.8rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+@media (max-width: 1543px) {
   .work-container {
     flex-direction: column;
+  }
+
+  .work1,
+  .work2,
+  .work3 {
+    max-width: 100%;
+  }
+
+  .my-work {
+    height: fit-content;
   }
 }

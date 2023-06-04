@@ -2,11 +2,22 @@ import { hamburgerMenu } from "../js/contants/hamburger.js";
 
 hamburgerMenu();
 
-// document.querySelectorAll(".nav-links").forEach((link) => {
-//   if (link.href === window.location.href) {
-//     link.setAttribute("aria-current", "location");
-//   }
-// });
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach((link) => {
+  // link.addEventListener("scroll", (e) => {
+  //   link.setAttribute("aria-current", )
+  // });
+  link.addEventListener("click", (e) => {
+    navLinks.forEach((link) => {
+      link.removeAttribute("aria-current");
+    });
+
+    console.log(e.target);
+
+    link.setAttribute("aria-current", "page");
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const currentUrl = window.location.href;
@@ -18,3 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     entry.target.classList.toogle("show", entry.isIntersecting);
+//   });
+//   {
+//     treshold: 0.5;
+//   }
+// });
+
+// navLinks.forEach((link) => {
+//   observer.observe(navLinks);
+// });

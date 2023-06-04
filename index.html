@@ -10,18 +10,21 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <a href="#intro">
-          <img class="logo" src="images/logo.png" alt="" />
+        <a href="index.html">
+          <img id="logo" src="images/logo.png" alt="" />
         </a>
         <div class="nav-menu">
           <div class="nav-item">
-            <a class="nav-link" href="#about-me"><div>About</div></a>
+            <a href="#intro" class="nav-link">Home</a>
           </div>
           <div class="nav-item">
-            <a class="nav-link" href="#my-work"><div>My Work</div></a>
+            <a class="nav-link" href="#about-me">About</a>
           </div>
           <div class="nav-item">
-            <a class="nav-link" href="#contact"><div>Contact</div></a>
+            <a class="nav-link" href="#my-work">My Work</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
         <div class="hamburger">
@@ -39,13 +42,15 @@
         <div class="me-photo"></div>
       </section>
       <section id="about-me" class="about">
-        <h2>About me</h2>
+        
         <div class="about-text">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quo, odio perferendis eius quam sequi corrupti deleniti natus. Molestiae nesciunt numquam ea placeat ad ipsum unde
-            nostrum impedit dolorem corporis.
-          </p>
+          <p >
+            I am a front-end developer student that after almost 2 decades in the logistics area of work wanted to try something else. Computers have always interested me, but always been something I would do on my free time. I want to change this and do this for a living now.
+            </p>
+             <p class="p-break"> The fact that I stumbled upon front-end development was mostly accidental, but coding in general is something I have always been curious about. </p>
+          
         </div>
+        <h2>About me</h2>
       </section>
       <section class="my-work" id="my-work">
         <h2>My work</h2>
@@ -53,8 +58,17 @@
           <div class="work1">
             <h3>Community science musem</h3>
             <div class="work1-img"></div>
+            <div class="logo">
+              <div id="logo-html"></div>
+              <div id="logo-css"></div>
+            </div>
             <div class="work-text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum minus officia sed ratione commodi exercitationem, nam similique dolorem tenetur eum labore facere qui, ipsa vero?
+              <p>
+              This was the first whole project page we made to show the skills we have learned in html and css. Design was a big part of it</p>
+              <!-- <p class="p-break">
+              Also the design aspect was an important task to display. I used a lot of time on this one,
+               mostly because it was new for me, but also to make up a design is not so easy.
+              </p> -->
               <div class="links">
                 <a href="https://github.com/bjornhaavard/Community_science-museum">Github</a>
                 <a href="https://snazzy-conkies-f91116.netlify.app/">Website</a>
@@ -64,9 +78,18 @@
           <div class="work2">
             <h3>Rainy days</h3>
             <div class="work2-img"></div>
+            <div class="logo">
+              <div id="logo-html"></div>
+              <div id="logo-css"></div>
+              <div id="logo-js"></div>
+            </div>
             <div class="work-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur commodi natus fugiat! Quod harum beatae dolore cupiditate fugit tempora, sint nulla soluta, iure dolores eum
-              corrupti animi ea consequatur perferendis.
+              <p>
+                Rainy days is my second project in this studie. I was tasked to make a website for families for the brand rainy days wich sell raincoats for different occasions. 
+              </p>
+              <!-- <p class="p-break">
+                After this project was finished using design skills and basic coding skills for the html and css, I had to come back to this same project adfter learning JavaScript and implement functionality to the site. This was a challenging task for me as JavaScriptis a whole different level of coding.
+              </p>              -->
               <div class="links">
                 <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-bjornhaavard">Github</a>
                 <a href="https://kind-wilson-46a5f7.netlify.app/">Website</a>
@@ -76,9 +99,18 @@
           <div class="work3">
             <h3>Shooting blog</h3>
             <div class="work3-img"></div>
+            <div class="logo">
+              <div id="logo-html"></div>
+              <div id="logo-css"></div>
+              <div id="logo-js"></div>
+            </div>
             <div class="work-text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione animi ea alias nisi, nobis perspiciatis recusandae architecto? Dignissimos officia quam iusto ratione sapiente
-              molestias, ex nesciunt cupiditate quod minus iste.
+              <p>
+              The shooting blog was my project exam and was a blog of any form that had to take a wordpress api call to get the blog posts and display them in different ways.
+              </p>
+              <!-- <p class="p-break">
+              I had to have a carousel on the front that displayed the latest posts, and the post images was to have a modal pop up when clicking them. This was a fun but challenging project. 
+            </p> -->
               <div class="links">
                 <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-bjornhaavard/tree/main">Github</a>
                 <a href="https://magnificent-axolotl-a473b6.netlify.app/index.html">Website</a>
@@ -89,7 +121,8 @@
       </section>
       <section class="contact" id="contact">
         <h2>Contact Me</h2>
-        <<div class="contact-form">
+        <div class="contact-form">
+          <img src="/images/pexels-markus-winkler-4159962(1).jpg" alt="picture of a typewriter with a contact written on it">
           <form id="contactForm" method="get">
             <div class="messageSuccessfull" id="messageSent"></div>
             <div>
@@ -107,10 +140,18 @@
             <div class="form-error" id="textError">Please enter a minimum of 5 letters</div>
             <textarea aria-label="text area" name="text" id="text" cols="30" rows="10"></textarea>
             <button class="cta">submit</button>
-          </form>
+            </form>
+          </div>
       </section>
     </main>
-    <footer class="footer">Bjørn Håvard Steinnes &copy;</footer>
+    <footer class="footer">Bjørn Håvard Steinnes &copy;
+      <div class="social glow">
+        <a aria-label="facebook link" href="https://www.facebook.com/bjornhaavard">Facebook</a>
+        <a aria-label="instagram link" href="https://www.instagram.com/bjornhaavardsteinnes/">instagram </a>
+        <a aria-label="github link" href=https://github.com/bjornhaavard>Github</a>
+      </div>
+    </footer> 
   </body>
   <script type="module" src="/js/index.js"></script>
+  <script type="module" src="/js/contact.js"></script>
 </html>
