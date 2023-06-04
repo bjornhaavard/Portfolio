@@ -16,7 +16,6 @@
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(45deg, var(--header-color) 50%, burlywood 50%);
-  /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); */
 }
 
 .contact-text {
@@ -37,8 +36,11 @@
 }
 
 @media (max-width: 420px) {
-  .contact p,
   .contact h2 {
     font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 1.3rem;
   }
 }
