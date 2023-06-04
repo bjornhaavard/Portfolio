@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   scroll-margin-top: 5.7rem;
   margin-top: 2rem;
@@ -33,9 +33,9 @@
   font-size: 4rem;
 }
 
-/* @media (min-width: 900px) {
-  .contact {
-    flex-direction: row;
-    align-items: center;
+@media (max-width: 380px) {
+  .contact p,
+  .contact h2 {
+    font-size: 1.5rem;
   }
-} */
+}
