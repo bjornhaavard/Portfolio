@@ -28,3 +28,10 @@
   transition: all 0.3s ease;
   text-decoration: underline;
 }
+
+@media (max-width: 370px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+}

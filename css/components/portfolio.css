@@ -133,22 +133,25 @@
   flex-flow: column;
 }
 
-.links a {
+.links a,
+.contact a {
   background-color: var(--font-color);
   color: antiquewhite;
   box-shadow: var(--box-shadow);
   padding: 0.8rem;
+  max-width: 6.8rem;
   border-radius: 5px;
   transition: all 0.3s ease;
 }
 
-.links a:hover {
+.links a:hover,
+.contact a:hover {
   transform: translateY(-3px);
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
-@media (max-width: 1543px) {
+@media (max-width: 1043px) {
   .work-container {
     flex-direction: column;
   }

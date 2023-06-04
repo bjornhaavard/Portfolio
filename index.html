@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="I am a front-end developer student that after almost 2 decades in the logistics area of work wanted to try something else. Computers have always interested me, but always been something I would do on my free time. I want to change this and do this for a living now.">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Portfolio | Home</title>
   </head>
@@ -39,16 +40,14 @@
         <div class="me-content">
           <h1>Hello! I am Bjørn Håvard</h1>
         </div>
-        <div class="me-photo"></div>
+        <div aria-label="a profile picture of me" class="me-photo"></div>
       </section>
       <section id="about-me" class="about">
-        
         <div class="about-text">
           <p >
             I am a front-end developer student that after almost 2 decades in the logistics area of work wanted to try something else. Computers have always interested me, but always been something I would do on my free time. I want to change this and do this for a living now.
             </p>
              <p class="p-break"> The fact that I stumbled upon front-end development was mostly accidental, but coding in general is something I have always been curious about. </p>
-          
         </div>
         <h2>About me</h2>
       </section>
@@ -65,10 +64,6 @@
             <div class="work-text">
               <p>
               This was the first whole project page we made to show the skills we have learned in html and css. Design was a big part of it</p>
-              <!-- <p class="p-break">
-              Also the design aspect was an important task to display. I used a lot of time on this one,
-               mostly because it was new for me, but also to make up a design is not so easy.
-              </p> -->
               <div class="links">
                 <a href="https://github.com/bjornhaavard/Community_science-museum">Github</a>
                 <a href="https://snazzy-conkies-f91116.netlify.app/">Website</a>
@@ -87,9 +82,6 @@
               <p>
                 Rainy days is my second project in this studie. I was tasked to make a website for families for the brand rainy days wich sell raincoats for different occasions. 
               </p>
-              <!-- <p class="p-break">
-                After this project was finished using design skills and basic coding skills for the html and css, I had to come back to this same project adfter learning JavaScript and implement functionality to the site. This was a challenging task for me as JavaScriptis a whole different level of coding.
-              </p>              -->
               <div class="links">
                 <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-bjornhaavard">Github</a>
                 <a href="https://kind-wilson-46a5f7.netlify.app/">Website</a>
@@ -108,9 +100,6 @@
               <p>
               The shooting blog was my project exam and was a blog of any form that had to take a wordpress api call to get the blog posts and display them in different ways.
               </p>
-              <!-- <p class="p-break">
-              I had to have a carousel on the front that displayed the latest posts, and the post images was to have a modal pop up when clicking them. This was a fun but challenging project. 
-            </p> -->
               <div class="links">
                 <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-bjornhaavard/tree/main">Github</a>
                 <a href="https://magnificent-axolotl-a473b6.netlify.app/index.html">Website</a>
@@ -120,28 +109,13 @@
         </div>
       </section>
       <section class="contact" id="contact">
+      <div class="contact-container">
         <h2>Contact Me</h2>
-        <div class="contact-form">
-          <img src="/images/pexels-markus-winkler-4159962(1).jpg" alt="picture of a typewriter with a contact written on it">
-          <form id="contactForm" method="get">
-            <div class="messageSuccessfull" id="messageSent"></div>
-            <div>
-              <label for="name"></label>
-              <div class="form-error" id="fullNameError">Please enter your full name (minimum 4 characters)</div>
-            </div>
-            <div>
-              <input type="name" id="name" name="fullname" placeholder="full name" />
-              <label for="email">email</label>
-              <div class="form-error" id="emailError">Please enter a valid email address</div>
-            </div>
-            <div>
-              <input type="email" placeholder="email address" id="email" name="email" />
-            </div>
-            <div class="form-error" id="textError">Please enter a minimum of 5 letters</div>
-            <textarea aria-label="text area" name="text" id="text" cols="30" rows="10"></textarea>
-            <button class="cta">submit</button>
-            </form>
-          </div>
+        <div class="contact-text">
+        <p>I can be reached here if you want to contact me.</p>
+        <a href = "mailto: bjornhaavard@hotmail.com">Send Email</a>
+       </div>
+      </div>
       </section>
     </main>
     <footer class="footer">Bjørn Håvard Steinnes &copy;
