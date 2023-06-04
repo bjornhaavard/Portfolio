@@ -3,9 +3,6 @@
   width: 100%;
   scroll-margin-top: 8rem;
   margin-top: 2rem;
-
-  /* background: linear-gradient(45deg, #5eb89a 50%, burlywood 50%);
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +11,7 @@
 }
 
 .contact-container {
-  margin: 2rem;
+  margin-left: 2rem;
   width: 100%;
   height: 600px;
   background: linear-gradient(45deg, #5eb89a 50%, burlywood 50%);

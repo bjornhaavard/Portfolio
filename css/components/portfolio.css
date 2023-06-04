@@ -4,6 +4,7 @@
   margin: 2rem;
   scroll-margin-top: 8rem;
   height: 100vh;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
 }
