@@ -6,12 +6,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+
   background-color: var(--header-color);
 }
 
 .contact-container {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   width: 100%;
   height: 600px;
   background: linear-gradient(45deg, #5eb89a 50%, burlywood 50%);
@@ -21,6 +21,7 @@
 .contact-text {
   display: flex;
   flex-direction: column;
+  margin-left: 2rem;
 }
 
 .contact p {
@@ -30,7 +31,7 @@
 }
 
 .contact h2 {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 2rem;
   font-size: 4rem;
 }
 
