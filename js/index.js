@@ -13,8 +13,6 @@ navLinks.forEach((link) => {
       link.removeAttribute("aria-current");
     });
 
-    console.log(e.target);
-
     link.setAttribute("aria-current", "page");
   });
 });

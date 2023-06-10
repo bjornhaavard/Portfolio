@@ -23,8 +23,7 @@
 }
 
 nav a {
-  /* text-decoration: none; */
-  color: var(--font-color);
+  color: #c9f0e4;
   font-weight: 600;
 }
 
@@ -34,6 +33,7 @@ nav a:target {
 
 .nav-menu {
   background-color: var(--background-color);
+  color: var(--font-color);
   padding: 0.3rem;
 }
 
@@ -63,33 +63,6 @@ nav a:target {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* .nav-menu {
-    position: absolute;
-    right: -100%;
-    display: none;
-    top: 93px;
-    font-size: 1.5rem;
-    z-index: 50;
-    gap: 0;
-    flex-direction: column;
-    background-color: var(--header-color);
-    width: 100%;
-    height: 70vh;
-    text-align: center;
-    transform: translateX(100%);
-    transition: transform 0.5s ease;
-  }
-
-  .nav-item {
-    margin: 56px 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-    display: block;
-    transform: translateX(0);
-    transition: all 0.8s ease;
-  } */
   .nav-menu {
     position: fixed;
     top: 94px;
@@ -97,7 +70,7 @@ nav a:target {
     bottom: 0;
     width: 78%;
     height: 55%;
-    background-color: var(--header-color);
+    background-color: var(--font-color);
     transform: translateX(100%);
     transition: transform 0.5s ease;
     z-index: 50;
@@ -108,7 +81,7 @@ nav a:target {
   }
 
   .nav-item {
-    margin: 2rem 0; /* Adjusted margin */
+    margin: 2rem 0;
   }
 
   .nav-menu.active {
@@ -124,6 +97,10 @@ nav a:target {
     justify-content: center;
     font-size: 1.3rem;
     align-items: start;
+  }
+
+  .nav a {
+    color: var(--font-color);
   }
 
   .hamburger {
