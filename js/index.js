@@ -1,4 +1,4 @@
-import { hamburgerMenu } from "../js/contants/hamburger.js";
+import { hamburgerMenu } from "./constants/hamburger.js";
 
 hamburgerMenu();
 
