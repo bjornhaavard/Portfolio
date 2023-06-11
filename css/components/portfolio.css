@@ -2,7 +2,7 @@
   display: flex;
   text-align: center;
   margin: 2rem;
-  scroll-margin-top: 5.7rem;
+  scroll-margin-top: 7.2rem;
   height: max-content;
   justify-content: center;
   flex-direction: column;
@@ -39,7 +39,7 @@
   gap: 1rem;
 }
 
-#logo-html {
+.logo-html {
   background-image: url(/images/icons8-html-logo-48.png);
   background-position: center;
   background-size: cover;
@@ -47,7 +47,7 @@
   width: 50px;
 }
 
-#logo-css {
+.logo-css {
   background-image: url(/images/icons8-css-logo-48.png);
   background-position: center;
   background-size: cover;
@@ -55,7 +55,7 @@
   width: 50px;
 }
 
-#logo-js {
+.logo-js {
   background-image: url(/images/icons8-javascript-logo-50.png);
   background-position: center;
   background-size: cover;
@@ -71,6 +71,7 @@
 .work-container {
   display: flex;
   flex-wrap: wrap;
+  transition: 0.3s;
   gap: 4rem;
   justify-content: center;
   align-items: center;
@@ -78,10 +79,10 @@
   margin-top: 3rem;
 }
 
-.work1:hover {
+/* .work1:hover {
   will-change: transform;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
-}
+} */
 
 .work1,
 .work2,
