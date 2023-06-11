@@ -48,9 +48,13 @@ body {
   background-color: #eeeeee;
 }
 
+.image-container {
+  display: contents;
+}
+
 .me-photo {
   background-image: url(/images/me_cropped_frame.jpeg);
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
