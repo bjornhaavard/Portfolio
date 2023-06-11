@@ -4,13 +4,13 @@
   padding: 2rem;
   background-color: #5eb89a;
   box-shadow: var(--box-shadow);
-  .nav-item {
-    &:hover {
-      text-decoration: underline;
-      text-underline-offset: 0.3rem;
-    }
-  }
 }
+
+.nav-item:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+}
+
 .header {
   position: sticky;
   top: 0;
