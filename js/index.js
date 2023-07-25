@@ -28,15 +28,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     entry.target.classList.toogle("show", entry.isIntersecting);
-//   });
-//   {
-//     treshold: 0.5;
-//   }
-// });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("show", entry.isIntersecting);
+    console.log(entries);
+  });
+  {
+    treshold: 1;
+  }
+});
 
-// navLinks.forEach((link) => {
-//   observer.observe(navLinks);
-// });
+// const section = document.querySelectorAll("section");
+
+navLinks.forEach((link) => {
+  observer.observe(link);
+  console.log(link);
+});
