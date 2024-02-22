@@ -3,7 +3,7 @@
 
 This is my personal portfolio page to showcase my work and skills.
 
-[Visit my portfolio]([https://www.openai.com/](https://precious-cannoli-adc0f8.netlify.app/#intro))
+[Visit my portfolio](https://precious-cannoli-adc0f8.netlify.app/#intro)
 
 
 ## Description
