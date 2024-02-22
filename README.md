@@ -3,6 +3,9 @@
 
 This is my personal portfolio page to showcase my work and skills.
 
+[Visit my portfolio]([https://www.openai.com/](https://precious-cannoli-adc0f8.netlify.app/#intro))
+
+
 ## Description
 
 I was taskd by NOROFF to make a portfolio website and to showcase three of my earlier projects in a selection of cards, and then provide links to my github repo and the webpage itself
